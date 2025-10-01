@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codiology | App Store - The Future of Apps</title>
+    <meta name="description" content="An advanced, responsive, and accessible app store interface with a modern glassmorphism design.">
+
+    <!-- Google Fonts: Poppins, Inter, Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@500;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Link to CSS file (will be created in the next step) -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Link to JS file (will be created last, 'defer' ensures it runs after HTML parsing) -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- ======================= HEADER ======================= -->
+    <header class="main-header">
+        <div class="container">
+            <a href="#" class="logo">Codiology - App Store</a>
+            <nav class="main-nav" aria-label="Main Navigation">
+                <form action="#" role="search" class="search-form">
+                    <label for="search-input" class="sr-only">Search for apps</label>
+                    <input type="search" id="search-input" placeholder="Search for apps...">
+                    <button type="submit" aria-label="Submit search"><i class="fas fa-search"></i></button>
+                </form>
+            </nav>
+            <div class="header-actions">
+                <button id="theme-toggle-btn" class="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i> <!-- Icon will change with JS -->
+                </button>
+                <button class="admin-login-btn" aria-label="Open Admin Panel">
+                    <i class="fas fa-user-shield"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ======================= MAIN CONTENT ======================= -->
+    <main>
+
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <img src="./assets/images/musica.png" alt="Featured App Icon" class="hero-app-icon">
+                    <h1 class="hero-title">Musica – Your Ultimate Music Player</h1>
+                    <p class="hero-subtitle">Musica is a sleek, powerful, and easy-to-use music player designed for music lovers. Whether you're into deep bass, smooth acoustics, or chill vibes, Musica delivers crystal-clear audio and a personalized experience like no other.</p>
+                    <a href="./Apps/Musica/APKs/V1.9.9/musica_v1.9.9.apk" class="btn btn-primary">Download Now</a>
+                </div>
+            </div>
+            <div class="gradient-bg"></div>
+        </section>
+
+        <!-- App Gallery Section -->
+        <section id="app-gallery" class="app-gallery-section">
+            <div class="container">
+                <!-- Gallery Controls: Filter, Sort, View Switcher -->
+                <div class="gallery-controls">
+                    <div class="filter-controls">
+                        <label for="category-filter" class="sr-only">Filter by category</label>
+                        <select id="category-filter" name="category">
+                            <option value="all">All Categories</option>
+                            <option value="productivity">Productivity</option>
+                            <option value="games">Games</option>
+                            <option value="educational">Educational</option>
+                            <option value="entertainment">Entertainment</option>
+                            <option value="new">New & Updated</option>
+                        </select>
+                    </div>
+                    <div id="view-switcher" class="view-switcher" role="group" aria-label="Switch app grid view">
+                        <button class="view-btn active" data-view="google" aria-label="Switch to detailed grid view"><i class="fas fa-th-large"></i></button>
+                        <button class="view-btn" data-view="apple" aria-label="Switch to compact list view"><i class="fas fa-list"></i></button>
+                        <button class="view-btn" data-view="qr" aria-label="Switch to QR code view"><i class="fas fa-qrcode"></i></button>
+                    </div>
+                </div>
+
+                <!-- App Grid -->
+                <div id="app-grid" class="app-grid view-google">
+                    <!-- App Card Template (will be populated by JS later, but here's an example) -->
+                    <article class="app-card" data-category="productivity" tabindex="0">
+                        <div class="app-card-main">
+                            <img src="https://via.placeholder.com/80" alt="App Icon for Synk" class="app-icon" loading="lazy">
+                            <div class="app-info">
+                                <h3 class="app-name">Synk</h3>
+                                <p class="app-version">v2.5.1</p>
+                                <span class="badge new-badge">New</span>
+                            </div>
+                        </div>
+                        <div class="app-card-footer">
+                            <div class="rating" role="img" aria-label="Rating: 4.5 out of 5 stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>4.5</span>
+                            </div>
+                            <div class="app-actions">
+                                <button class="btn-download" aria-label="Download Synk">
+                                    <i class="fas fa-download"></i>
+                                    <span class="download-count">1.2M</span>
+                                </button>
+                                <button class="btn-favorite" aria-label="Bookmark Synk">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- More app cards will be dynamically inserted here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Signup Section -->
+        <section id="newsletter" class="newsletter-section">
+            <div class="container">
+                <h2>Stay Updated</h2>
+                <p>Get the latest news on app releases and updates delivered to your inbox.</p>
+                <form action="#" class="newsletter-form">
+                    <label for="email-input" class="sr-only">Your Email Address</label>
+                    <input type="email" id="email-input" placeholder="you@example.com" required>
+                    <button type="submit" class="btn btn-secondary">Subscribe</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ======================= FOOTER ======================= -->
+    <footer class="main-footer">
+        <div class="container">
+            <nav class="footer-nav" aria-label="Footer Navigation">
+                <ul>
+                    <li><a href="https://learnix-web.netlify.app/portfolio/riaz/">About Developer</a></li>
+                    <li><a href="https://learnix-web.netlify.app/portfolio/riaz/">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </nav>
+            <div class="social-links">
+                <a href="#" aria-label="Follow us on Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Follow us on Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p class="copyright">&copy; 2025 Codiology App Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+<!-- ======================= MODALS & OVERLAYS ======================= -->
+
+<!-- App Details Modal (Initially Hidden) -->
+<div id="app-details-modal" class="modal" hidden aria-modal="true" role="dialog" aria-labelledby="modal-title">
+    <div class="modal-overlay" tabindex="-1" data-close-modal></div>
+    <div class="modal-content glass-effect">
+        <button class="modal-close-btn" aria-label="Close modal" data-close-modal><i class="fas fa-times"></i></button>
+        
+        <!-- Modal Header -->
+        <header class="modal-header">
+            <img src="https://via.placeholder.com/100" alt="App Icon" class="modal-app-icon">
+            <div class="modal-header-info">
+                <h2 id="modal-title" class="modal-app-name">App Name</h2>
+                <p class="modal-app-developer">Developer Inc.</p>
+                <div class="modal-header-actions">
+                    <button class="btn btn-primary btn-modal-download">
+                        <i class="fas fa-download"></i> Download
+                    </button>
+                    <!-- Favorite button will be dynamically handled by JS -->
+                    <button class="btn-favorite" aria-label="Add to favorites">
+                        <i class="far fa-heart"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- NEW: App Stats / Features Section -->
+        <section class="modal-stats" aria-label="App features">
+            <div class="stat-item">
+                <span id="modal-stat-rating" class="stat-value">4.8 <i class="fas fa-star"></i></span>
+                <p class="stat-label">Rating</p>
+            </div>
+            <div class="stat-item">
+                <span id="modal-stat-age" class="stat-value">12+</span>
+                <p class="stat-label">Age</p>
+            </div>
+            <div class="stat-item">
+                <span id="modal-stat-category" class="stat-value"><i class="fas fa-shapes"></i> Productivity</span>
+                <p class="stat-label">Category</p>
+            </div>
+        </section>
+        
+        <!-- Modal Body -->
+        <section class="modal-body">
+            <!-- Screenshot Carousel -->
+            <div id="modal-screenshot-carousel" class="screenshot-carousel" aria-roledescription="carousel" aria-label="App screenshots">
+                <div class="carousel-track">
+                    <!-- Carousel content will be dynamic -->
+                </div>
+                <button class="carousel-btn prev" aria-label="Previous screenshot"><i class="fas fa-chevron-left"></i></button>
+                <button class="carousel-btn next" aria-label="Next screenshot"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            
+            <h3>Description</h3>
+            <p id="modal-app-description">Full description of the app...</p>
+            
+            <details class="modal-details">
+                <summary>Version History</summary>
+                <ul id="modal-version-history">
+                    <!-- History items will be dynamic -->
+                </ul>
+            </details>
+
+            <h3>Download Link</h3>
+            <div class="download-options">
+                <div id="modal-qr-code" class="qr-code-container">
+                    <!-- QR Code will be generated here by JS -->
+                </div>
+                <div class="compatible-devices">
+                    <h4>Compatible Devices</h4>
+                    <ul id="modal-compatible-devices" class="device-list">
+                        <!-- Device items will be dynamic -->
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal Footer for Reviews -->
+        <footer class="modal-footer">
+            <h3>Rate this App</h3>
+            <div class="star-rating-input" role="radiogroup" aria-label="Submit your rating">
+                <button role="radio" aria-checked="false" aria-label="1 star"><i class="far fa-star"></i></button>
+                <button role="radio" aria-checked="false" aria-label="2 stars"><i class="far fa-star"></i></button>
+                <button role="radio" aria-checked="false" aria-label="3 stars"><i class="far fa-star"></i></button>
+                <button role="radio" aria-checked="false" aria-label="4 stars"><i class="far fa-star"></i></button>
+                <button role="radio" aria-checked="false" aria-label="5 stars"><i class="far fa-star"></i></button>
+            </div>
+        </footer>
+    </div>
+</div>
+
+    <!-- Admin Panel (BONUS - Initially Hidden) -->
+    <div id="admin-modal" class="modal" hidden aria-modal="true" role="dialog" aria-labelledby="admin-title">
+         <div class="modal-overlay" tabindex="-1" data-close-modal></div>
+         <div class="modal-content admin-panel">
+            <button class="modal-close-btn" aria-label="Close admin panel" data-close-modal><i class="fas fa-times"></i></button>
+            <h2 id="admin-title">Admin Panel</h2>
+
+            <!-- Admin Login Form -->
+            <form id="admin-login-form">
+                <label for="admin-password">Password:</label>
+                <input type="password" id="admin-password" required>
+                <button type="submit" class="btn">Login</button>
+                <p id="admin-login-error" class="error-message" hidden></p>
+            </form>
+
+            <!-- Admin Dashboard (hidden until login) -->
+            <div id="admin-dashboard" hidden>
+                <h3>Add/Edit App</h3>
+                <form id="app-form">
+                    <!-- Form fields for app details: name, version, category, icon URL, etc. -->
+                </form>
+                <h3>Manage Apps</h3>
+                <div id="admin-app-list">
+                    <!-- List of existing apps with edit/delete buttons -->
+                </div>
+                <h3>Analytics</h3>
+                <div class="chart-container">
+                    <!-- Canvas for Chart.js will go here -->
+                    <canvas id="analytics-chart" role="img" aria-label="A bar chart showing app downloads"></canvas>
+                </div>
+            </div>
+         </div>
+    </div>
+
+
+</body>
+</html>
