@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
             screenshots: ["./Apps/Musica/Images/V1.9.9/previewed/image1.png", "./Apps/Musica/Images/V1.9.9/previewed/image2.png", "./Apps/Musica/Images/V1.9.9/previewed/image3.png", "./Apps/Musica/Images/V1.9.9/previewed/image4.png", "./Apps/Musica/Images/V1.9.9/previewed/image5.png"],
             versionHistory: [{ version: "1.1.0", notes: "Added Playlist." }, { version: "1.8.5", notes: "Device Sync." }],
             devices: ["Phone", "Tablet"],
-            downloadLink: "./Apps/Musica/APKs/V1.9.9/musica_v1.9.9.apk"
+            downloadLink: "https://drive.google.com/file/d/1ia8rsLdN8Enua4BqJwIRWtahr23kYM-1/view?usp=sharing"
         },
         {
             id: 2,
