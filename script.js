@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
             screenshots: ["./Apps/DarkWeb/Images/V0.1.1/previewed/image1.png", "./Apps/DarkWeb/Images/V0.1.1/previewed/image2.png", "./Apps/DarkWeb/Images/V0.1.1/previewed/image3.png", "./Apps/DarkWeb/Images/V0.1.1/previewed/image4.png", "./Apps/DarkWeb/Images/V0.1.1/previewed/image5.png"],
             versionHistory: [{ version: "0.0.1", notes: "Newly born." }, { version: "0.1.1", notes: "Initial release." }],
             devices: ["Phone", "Tablet"],
-            downloadLink: "./Apps/DarkWeb/APKs/V0.1.2/DarkWeb-v0.1.2.apk"
+            downloadLink: "./Apps/DarkWeb/APKs/V0.1.1/DarkWeb-v0.1.2.apk"
         },
         {
             id: 4,
