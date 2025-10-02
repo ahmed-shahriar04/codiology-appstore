@@ -79,14 +79,14 @@ document.addEventListener('DOMContentLoaded', () => {
             category: "productivity",
             rating: 3.5,
             downloads: 1500,
-            icon: "./assets/images/myPortal.webp",
+            icon: "./assets/images/silent_zone_logo.png",
             isNew: false,
             isUpdated: true,
-            description: "Embark on a journey of enhanced learning and professional development with the extensive resources of the platform. Perfect your craft by delving into a wealth of coding best practices and cleaner code writing tips. Elevate your expertise with curated recommendations for books that promise to sharpen your coding skills even further.",
-            screenshots: ["./Apps/MyPortal/Images/V1.5/previewed/image1.png"],
-            versionHistory: [{ version: "0.1", notes: "Newly born." }, { version: "1.5", notes: "Initial release." }],
+            description: "Take control of your phone’s sound with Silent Zone, the ultimate sound profile manager. Whether you're in meetings, at school, sleeping, or just need some peace, Silent Zone automatically switches your device to Silent, Vibrate, or Sound mode based on your custom schedule.",
+            screenshots: ["./Apps/SilentZone/Images/previewed/image1.png", "./Apps/SilentZone/Images/previewed/image2.png", "./Apps/SilentZone/Images/previewed/image3.png", "./Apps/SilentZone/Images/previewed/image4.png", "./Apps/SilentZone/Images/previewed/image5.png"],
+            versionHistory: [{ version: "1.2.9", notes: "Set Schedules, Automatic Sound Control, Daily & Weekly Timers, Never Miss a Beat" }],
             devices: ["Phone", "Tablet"],
-            downloadLink: "./Apps/MyPortal/APKs/V1.5/myPortal-v1.5.apk"
+            downloadLink: "./Apps/SilentZone/APKs/V1.2.9/silentZone_V1.2.9.apk"
         },
         // ...Add more mock app data as needed
     ];
