@@ -72,6 +72,22 @@ document.addEventListener('DOMContentLoaded', () => {
             devices: ["Phone", "Tablet"],
             downloadLink: "./Apps/MyPortal/APKs/V1.5/myPortal-v1.5.apk"
         },
+        {
+            id: 5,
+            name: "Silent Zone",
+            version: "1.2.9",
+            category: "productivity",
+            rating: 3.5,
+            downloads: 1500,
+            icon: "./assets/images/myPortal.webp",
+            isNew: false,
+            isUpdated: true,
+            description: "Embark on a journey of enhanced learning and professional development with the extensive resources of the platform. Perfect your craft by delving into a wealth of coding best practices and cleaner code writing tips. Elevate your expertise with curated recommendations for books that promise to sharpen your coding skills even further.",
+            screenshots: ["./Apps/MyPortal/Images/V1.5/previewed/image1.png"],
+            versionHistory: [{ version: "0.1", notes: "Newly born." }, { version: "1.5", notes: "Initial release." }],
+            devices: ["Phone", "Tablet"],
+            downloadLink: "./Apps/MyPortal/APKs/V1.5/myPortal-v1.5.apk"
+        },
         // ...Add more mock app data as needed
     ];
 
