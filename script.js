@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             id: 1,
             name: "Musica",
-            version: "1.9.9",
+            version: "2.1.4",
             category: "entertainment",
             rating: 4.8,
             downloads: 2300000,
@@ -20,9 +20,9 @@ document.addEventListener('DOMContentLoaded', () => {
             isUpdated: false,
             description: "Musica is a sleek, powerful, and easy-to-use music player designed for music lovers. Whether you're into deep bass, smooth acoustics, or chill vibes, Musica delivers crystal-clear audio and a personalized experience like no other.",
             screenshots: ["./Apps/Musica/Images/V1.9.9/previewed/image1.png", "./Apps/Musica/Images/V1.9.9/previewed/image2.png", "./Apps/Musica/Images/V1.9.9/previewed/image3.png", "./Apps/Musica/Images/V1.9.9/previewed/image4.png", "./Apps/Musica/Images/V1.9.9/previewed/image5.png"],
-            versionHistory: [{ version: "1.1.0", notes: "Added Playlist." }, { version: "1.8.5", notes: "Device Sync." }],
+            versionHistory: [{ version: "1.1.0", notes: "Added Playlist." }, { version: "2.1.4", notes: "New UI and Controls." }],
             devices: ["Phone", "Tablet"],
-            downloadLink: "https://drive.google.com/file/d/1ia8rsLdN8Enua4BqJwIRWtahr23kYM-1/view?usp=sharing"
+            downloadLink: "https://github.com/ahmed-shahriar04/codiology-appstore/releases/download/2.1.4/Musica_v2.1.4.apk"
         },
         {
             id: 2,
